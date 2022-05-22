@@ -90,3 +90,7 @@ D:\DevExp_IsTakipProjesi\DevExp_IsTakipProjesi\bin\Debug\de\DevExpress.Office.v1
 D:\DevExp_IsTakipProjesi\DevExp_IsTakipProjesi\bin\Debug\es\DevExpress.Office.v18.1.Core.resources.dll
 D:\DevExp_IsTakipProjesi\DevExp_IsTakipProjesi\bin\Debug\ja\DevExpress.Office.v18.1.Core.resources.dll
 D:\DevExp_IsTakipProjesi\DevExp_IsTakipProjesi\bin\Debug\ru\DevExpress.Office.v18.1.Core.resources.dll
+D:\DevExp_IsTakipProjesi\DevExp_IsTakipProjesi\bin\Debug\EntityFramework.dll
+D:\DevExp_IsTakipProjesi\DevExp_IsTakipProjesi\bin\Debug\EntityFramework.SqlServer.dll
+D:\DevExp_IsTakipProjesi\DevExp_IsTakipProjesi\bin\Debug\EntityFramework.xml
+D:\DevExp_IsTakipProjesi\DevExp_IsTakipProjesi\bin\Debug\EntityFramework.SqlServer.xml

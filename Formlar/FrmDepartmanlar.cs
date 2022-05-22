@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DevExp_IsTakipProjesi.Entity;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,24 @@ namespace DevExp_IsTakipProjesi.Formlar
         public FrmDepartmanlar()
         {
             InitializeComponent();
+        }
+
+        DbIsTakipEntities db = new DbIsTakipEntities();
+        private void btnListele_Click(object sender, EventArgs e)
+        {
+            Listele();
+        }
+
+        private void Listele()
+        {
+            var degerler = (from x in db.TblDepartmanlar
+                            select new
+                            {
+                                x.Id,
+                                x.Ad
+                            }).ToList();
+
+            gridControl1.DataSource = degerler;
         }
     }
 }
