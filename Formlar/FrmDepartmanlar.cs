@@ -1,4 +1,5 @@
 ﻿using DevExp_IsTakipProjesi.Entity;
+using DevExpress.XtraEditors;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -32,8 +33,17 @@ namespace DevExp_IsTakipProjesi.Formlar
                                 x.Id,
                                 x.Ad
                             }).ToList();
-
             gridControl1.DataSource = degerler;
+        }
+
+        private void btnEkle_Click(object sender, EventArgs e)
+        {
+            TblDepartmanlar dep = new TblDepartmanlar();
+            dep.Ad = txtAd.Text;
+            db.TblDepartmanlar.Add(dep);
+            db.SaveChanges();
+            XtraMessageBox.Show("Departman başarılı bir şekilde sisteme eklendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            Listele();
         }
     }
 }
